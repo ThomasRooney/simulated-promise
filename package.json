@@ -1,0 +1,61 @@
+{
+  "name": "simulated-promise",
+  "version": "0.0.1",
+  "description": "Provides a SimulatedPromise object, that allows one to test interactions with promises",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "tslint-check": "tslint-config-prettier-check ./tslint.json",
+    "test": "jest",
+    "prepublish": "tsc && jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ThomasRooney/simulated-promise.git"
+  },
+  "keywords": [
+    "test",
+    "testing",
+    "async",
+    "mock",
+    "promise",
+    "jest"
+  ],
+  "author": "Thomas Rooney",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ThomasRooney/simulated-promise/issues"
+  },
+  "homepage": "https://github.com/ThomasRooney/simulated-promise#readme",
+  "files": [
+    "lib"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "23.3.1",
+    "jest": "23.5.0",
+    "prettier": "1.14.2",
+    "ts-jest": "23.1.4",
+    "tslint": "5.11.0",
+    "tslint-config-prettier": "1.15.0",
+    "tslint-eslint-rules": "5.4.0",
+    "typescript": "2.8.3"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
