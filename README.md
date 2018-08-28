@@ -40,10 +40,10 @@ it("when adapter is PROCESSING it waits one second between responses", () => {
     // myFunc will now be waiting at line 18
     const myFuncPromise = myFunc(adapter);
     expect(adapter).toBeCalled();
-    adapterPromise.trigger.resolve("PROCESSING");
+    await adapterPromise.trigger.resolve("PROCESSING");
     // Now we're waiting on line 20
     expect(delay).toBeCalled();
-    delayPromise.trigger.resolve();
+    await delayPromise.trigger.resolve();
     // Now we're waiting on line 21
     await adapterPromise.trigger.resolve("Good")
     // Now we're complete.
