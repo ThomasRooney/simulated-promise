@@ -1,6 +1,6 @@
 {
   "name": "simulated-promise",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Provides a SimulatedPromise object, that allows one to test interactions with promises",
   "main": "./lib/simulated-promise.js",
   "types": "./lib/simulated-promise.d.ts",
